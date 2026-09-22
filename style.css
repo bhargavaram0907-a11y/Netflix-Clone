@@ -131,10 +131,391 @@ input {
     max-width: 70vw;
 }
 
-@media screen and (max-width: 1300px) {
-    .first {
-        flex-wrap: wrap;
-    }
+@media screen and (max-width: 900px) {
+
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    max-width: 90vw;
+}
+
+nav img {
+    width: 105px;
+}
+
+.but {
+    padding: 8px 18px;
+    font-size: 14px;
+}
+
+.small-red {
+    padding: 8px 15px;
+}
+
+.hero {
+    padding: 0 20px;
+}
+
+.hero > :nth-child(1) {
+    font-size: 38px;
+    line-height: 1.2;
+}
+
+.hero > :nth-child(2) {
+    font-size: 21px;
+}
+
+.hero > :nth-child(3) {
+    font-size: 18px;
+}
+
+.hero > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+input {
+    box-sizing: border-box;
+    width: 55%;
+    max-width: 400px;
+    padding: 14px;
+    font-size: 16px;
+}
+
+.big-red {
+    padding: 14px 22px;
+    font-size: 15px;
+}
+
+.first,
+.second {
+    max-width: 85vw;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 20px;
+    padding: 40px 0;
+}
+
+section.first > div :nth-child(1),
+section.second > div :nth-child(1) {
+    font-size: 38px;
+    line-height: 1.2;
+}
+
+section.first > div :nth-child(2),
+section.second > div :nth-child(2) {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.secImg {
+    width: 100%;
+    max-width: 555px;
+}
+
+.secImg img {
+    width: 100%;
+    height: auto;
+}
+
+.secImg video {
+    width: 100%;
+    height: auto;
+    top: 9%;
+    right: 0;
+}
+
+.faq {
+    padding: 30px 20px;
+}
+
+.faq h2 {
+    font-size: 38px;
+}
+
+.faqbox {
+    max-width: 85vw;
+    font-size: 20px;
+    padding: 20px;
+}
+
+section.faq span {
+    font-size: 20px;
+}
+
+footer {
+    max-width: 85vw;
+    padding: 40px 0;
+}
+
+.footer {
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+
+body {
+    overflow-x: hidden;
+}
+
+.main {
+    height: 600px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.main .box {
+    height: 600px;
+}
+
+nav {
+    width: 90vw;
+    max-width: none;
+    height: 70px;
+    justify-content: space-between;
+}
+
+nav img {
+    width: 90px;
+}
+
+nav button {
+    gap: 5px;
+}
+
+.but {
+    padding: 7px 10px;
+    font-size: 12px;
+}
+
+.small-red {
+    padding: 7px 12px;
+}
+
+.hero {
+    height: calc(100% - 70px);
+    padding: 0 20px;
+    gap: 18px;
+}
+
+.hero > :nth-child(1) {
+    font-size: 28px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.hero > :nth-child(2) {
+    font-size: 17px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.hero > :nth-child(3) {
+    font-size: 15px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.hero > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+input {
+    width: 100%;
+    max-width: 330px;
+    box-sizing: border-box;
+    padding: 14px;
+    font-size: 15px;
+}
+
+.big-red {
+    padding: 13px 22px;
+    font-size: 15px;
+}
+
+.first,
+.second {
+    width: 90vw;
+    max-width: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+    gap: 20px;
+    padding: 45px 0;
+}
+
+section.first > div,
+section.second > div {
+    width: 100%;
+}
+
+section.first > div :nth-child(1),
+section.second > div :nth-child(1) {
+    font-size: 28px;
+    line-height: 1.25;
+}
+
+section.first > div :nth-child(2),
+section.second > div :nth-child(2) {
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.secImg {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+}
+
+.secImg img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.secImg video {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 9%;
+    right: 0;
+}
+
+.seperation {
+    height: 5px;
+}
+
+.faq {
+    padding: 35px 15px;
+    font-size: 20px;
+}
+
+.faq h2 {
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.faqbox {
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 18px;
+    margin: 12px auto;
+    gap: 15px;
+    text-align: left;
+}
+
+section.faq span {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.faqbox svg {
+    min-width: 20px;
+}
+
+footer {
+    width: 90vw;
+    max-width: none;
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+
+.questions {
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.footer {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 10px 0;
+}
+
+.footer-item {
+    gap: 14px;
+}
+
+.footer a {
+    font-size: 14px;
+}
+
+}
+
+@media screen and (max-width: 380px) {
+
+nav img {
+    width: 80px;
+}
+
+.but {
+    padding: 6px 8px;
+    font-size: 11px;
+}
+
+.small-red {
+    padding: 6px 10px;
+}
+
+.hero > :nth-child(1) {
+    font-size: 24px;
+}
+
+.hero > :nth-child(2) {
+    font-size: 16px;
+}
+
+.hero > :nth-child(3) {
+    font-size: 14px;
+}
+
+input {
+    max-width: 290px;
+    font-size: 14px;
+}
+
+.big-red {
+    font-size: 14px;
+    padding: 12px 18px;
+}
+
+section.first > div :nth-child(1),
+section.second > div :nth-child(1) {
+    font-size: 25px;
+}
+
+section.first > div :nth-child(2),
+section.second > div :nth-child(2) {
+    font-size: 16px;
+}
+
+.faq h2 {
+    font-size: 25px;
+}
+
+.faqbox {
+    font-size: 15px;
+    padding: 16px;
+}
+
+section.faq span {
+    font-size: 15px;
+}
+
 }
 
 .secImg {
